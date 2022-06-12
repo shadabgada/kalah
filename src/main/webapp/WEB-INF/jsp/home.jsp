@@ -11,14 +11,14 @@
 </head>
 <body>
     <div class="header">
-	    <center><h1>Kalah Game</h1></center>
+	    <center><h1>KALAH</h1></center>
 	    <center><h2>
 	    <c:choose>
 	    <c:when test = "${state eq 'NEW'}">
 	        Welcome to Kalah. Press button below to start.
 	    </c:when>
 	    <c:when test = "${state eq 'INPROGRESS'}">
-	        ${side}'s turn to play.
+	        Player Turn: ${side}
 	    </c:when>
 	    <c:when test = "${state eq 'FINISHED'}">
 	        Game over !
